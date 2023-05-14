@@ -72,16 +72,18 @@ hr {
 }
 
 /* HEADER */
-.main .header  {
+.header-main  {
     height: 90px;
     background-color: var(--header-color);
     text-align: right;
     width: 100%;
+    padding: 10px 10px;
+    line-height: 70px;
 }
 
-.main .header a {
+.header-top a {
     padding: 10px 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     border: 2px solid white;
 }
 
@@ -90,6 +92,8 @@ main {
     height: calc(100vh - 90px);
     background-color: var(--body-color);
 }
+
+
 
 /* SITE BAR */
 .siterbar {
@@ -100,6 +104,7 @@ main {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
+    position: relative;
 }
 #logo {
     margin-bottom: 20px;
@@ -148,6 +153,15 @@ main {
 .siterbar footer a
 {
     color: var(--lightgrey-color)
+}
+
+.siterbar .highlighted {
+    width: 2px;
+    background-color: var(--highlighted-color);
+    height: 50px;
+    position: absolute;
+    top: 98px;
+    left: 20px;
 }
 
 /* SITE BAR FOOTER */
