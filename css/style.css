@@ -13,6 +13,11 @@ box-sizing: border-box;
     --footer-color: #282828;
     --highlighted-color: #adff2f;
     --hover-color: #ffffff;
+    --lightgrey-color: #aaa;
+
+    /*--fa-li-margin: 100px; */
+    /* --fa-li-width: ;*/
+
 
 }
 
@@ -47,7 +52,38 @@ strong {
     border: 2px dotted red;
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+a:hover {
+    color: var(--highlighted-color);
+}
+
+hr {
+    width: 100%;
+    margin: 10px 0;
+}
+
 /* HEADER */
+.main .header  {
+    height: 90px;
+    background-color: var(--header-color);
+    text-align: right;
+    width: 100%;
+}
+
+.main .header a {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
 
 /* MAIN */
 main {
@@ -55,12 +91,100 @@ main {
     background-color: var(--body-color);
 }
 
+/* SITE BAR */
+.siterbar {
+    width: 230px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+#logo {
+    margin-bottom: 20px;
+}
+
+.siterbar .navbar {
+    
+}
+
+.fa-house,
+.fa-magnifying-glass,
+.fa-bars-staggered
+ {
+    margin-right: 20px;
+   
+}
+
+.fa-square-plus  {
+     margin-right: 10px;
+
+ }
+
+.siterbar .navbar-list li {
+    margin: 20px 0;
+}
+
+.siterbar .navbar-list li a {
+    margin: 20px 0;
+}
+
+.navbar-list .playlist {
+    margin-top: 40px;
+}
+
+.navbar-list .playlist span {
+    font-weight: 700;
+}
+
+.playlist-title {
+    display: inline-block;
+    margin: 20px 0;
+    color: white;
+}
+
+.siterbar a,
+.siterbar footer a
+{
+    color: var(--lightgrey-color)
+}
+
+/* SITE BAR FOOTER */
+.siterbar {
+    color: var(--lightgrey-color)
+}
+
+.siterbar footer {
+    background-color: var(--sitebar-color);
+    height: 120px;
+}
+.fa-circle-down {
+    margin-right: 10px;
+    color: var(--lightgrey-color);
+}
+
+.siterbar footer img {
+    width: 40px;
+}
+.profile {
+    align-content: center;
+    align-items: center;
+}
+.profile-image-placeholder {
+    margin-right: 10px;
+}
+
+
+
 /* FOOTER */
 footer {
     height: 90px;
     background-color: var(--footer-color);
     padding: 10px;
     color: white;
+    position: sticky;
+    overflow: hidden;
 }
 .footer-nav {
     height: 100%;
