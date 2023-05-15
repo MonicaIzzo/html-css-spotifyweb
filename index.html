@@ -28,66 +28,186 @@
     
 </head>
     <body>
-        <main class="flex">
+        <div class="content flex">
 <!-- siterbar -->
-            <section class="siterbar flex">
-<!-- siterbar nav -->
-                <nav class="">
-                    <div class="navbar">
-                        <div id="logo"><a href="#">
-                            <img src="img/logo.svg" alt="logo Spotify"></a>
-                        </div>
-                    </div>
-                    <div class="navbar-list debug">
-                        <ul class="fa-ul">
-                            <li><span class="fa-li"><i class="fa-solid fa-house fa-xl"></i></span><a href="#">Home</a></li>
-                            <li><span class="fa-li"><i class="fa-solid fa-magnifying-glass fa-xl"></i></span><a href="#">Cerca</a></li>
-                            <li><span class="fa-li"><i class="fa-solid fa-bars-staggered fa-xl"></i></span><a href="#">La tua libreria</a></li>
-                        </ul>
-                    <!-- siterbar Playlist-->
-                    <div class="playlist">
-                        <div><span class="playlist-title">PLAYLIST</span></div>
-                        <div><i class="fa-solid fa-square-plus fa-2xl"></i><span><a href="#">Crea Playlist</a></span></div>
-                        <ul>
-                            <li><a href="#">Nuova Playlist</a></li>
-                            <li><a href="#">Nuova Playlist</a></li>
-                            <li><a href="#">Nuova Playlist</a></li>
-                            <li><a href="#">Nuova Playlist</a></li>
-                            <li><a href="#">Nuova Playlist</a></li>
-                        </ul>
-                    </div>
-                    </div>
-                </nav>
-<!-- siterbar footer-->
-                <footer class="debug">
-                    <div><i class="fa-solid fa-circle-down"></i><a href="#">Installa app</a></div>
-                    <hr>
-                    <div class="profile flex">
-                        <div class="profile-image-placeholder">
-                            <img src="img/profile-image-placeholder.png" alt="Profile">
-                        </div>
-                        <div>
-                            <span><strong>John Doe</strong></span>
-                        </div>
-                    </div>
-                </footer>
-                <div class="highlighted">
-                
-                </div>
-            </section>
-<!-- main -->
-            <section class="header-main">
-<!-- main header -->
-                <div class="header-top">
-                    <a href="#">EFFETTUA L'UPGRADE</a>
-                </div>
-<!-- main body-->
-                <div class="content">
+<div class="siterbar flex">
+    <!-- siterbar nav -->
+    <nav class="">
+        <div class="navbar">
+            <div id="logo"><a href="#">
+                    <img src="img/logo.svg" alt="logo Spotify"></a>
+            </div>
+        </div>
+        <div class="navbar-list debug">
+            <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fa-solid fa-house fa-xl"></i></span><a href="#">Home</a></li>
+                <li><span class="fa-li"><i class="fa-solid fa-magnifying-glass fa-xl"></i></span><a href="#">Cerca</a>
+                </li>
+                <li><span class="fa-li"><i class="fa-solid fa-bars-staggered fa-xl"></i></span><a href="#">La tua
+                        libreria</a></li>
+            </ul>
+            <!-- siterbar Playlist-->
+            <div class="playlist">
+                <div><span class="playlist-title">PLAYLIST</span></div>
+                <div><i class="fa-solid fa-square-plus fa-2xl"></i><span><a href="#">Crea Playlist</a></span></div>
+                <ul>
+                    <li><a href="#">Nuova Playlist</a></li>
+                    <li><a href="#">Nuova Playlist</a></li>
+                    <li><a href="#">Nuova Playlist</a></li>
+                    <li><a href="#">Nuova Playlist</a></li>
+                    <li><a href="#">Nuova Playlist</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- siterbar footer-->
+    <footer class="debug">
+        <div><i class="fa-solid fa-circle-down"></i><a href="#">Installa app</a></div>
+        <hr>
+        <div class="profile flex">
+            <div class="profile-image-placeholder">
+                <img src="img/profile-image-placeholder.png" alt="Profile">
+            </div>
+            <div>
+                <span><strong>John Doe</strong></span>
+            </div>
+        </div>
+    </footer>
+    <div class="highlighted">
 
-                </div>
+    </div>
+</div>
+<!-- Header Content -->
+    <div class="header-content">
+        <div class="header">
+            <div class="header-btn">
+                <a href="#">EFFETTUA L'UPGRADE</a>
+            </div>
+        </div>
+<!-- Body Content -->
+    <div class="body-content">
+<!-- Body Nav -->
+        <div class="nav flex debug">
+            <ul class="navbar flex">
+                <li><a href="#">IN EVIDENZA</a><span class="navbar-highlighted">
+                </span></li>
+                <li><a href="#">PODCAST</a></li>
+                <li><a href="#">CLASSIFICHE</a></li>
+                <li><a href="#">GENERI E MOOD</a></li>
+                <li><a href="#">NUOVE USCITE</a></li>
+            </ul>
+        </div>
+<!-- Body -->
+<!-- Album new -->
+    <div class="recently-played">
+<!-- Album new -->        
+        <div class="recently-played-title">
+            <h2>Recently played</h2>
+        </div>
+    </div>
 
-            </section>
-        </main>
+    <div class="album-items flex debug">
+<!-- Album 01 -->
+        <div class="album-item">
+            <img src="img/metal_lifting.jpg" alt="Metal Lifting">
+            <h3>Heavy Metal</h3>
+            <p><strong>Subtitle</strong></p>
+        </div>
+<!-- Album 02 -->
+    <div class="album-items flex debug">
+        <div class="album-item">
+            <img src="img/stranger.jpeg" alt="Stranger Things">
+            <h3>Stranger Things, Vol. 1</h3>
+            <p><strong>Subtitle</strong></p>
+        </div>
+    </div>
+<!-- Album 03 -->
+    <div class="album-items flex debug">
+        <div class="album-item">
+            <img src="img/split.jpeg" alt="Split">
+            <h3>Split</h3>
+            <p><strong>Subtitle</strong></p>
+        </div>
+    </div>
+<!-- Album 04 -->
+    <div class="album-items flex debug">
+        <div class="album-item">
+            <img src="img/aquietplace.jpeg" alt="A quiet place">
+            <h3>A quiet place</h3>
+            <p><strong>Subtitle</strong></p>
+        </div>
+    </div>
+<!-- Album 05 -->
+    <div class="album-items flex debug">
+        <div class="album-item">
+            <img src="img/cure.jpeg" alt="Wellness">
+            <h3>A cure for wellness</h3>
+            <p><strong>Subtitle</strong></p>
+        </div>
+    </div>
+<!-- Album 06 -->
+    <div class="album-items flex debug">
+        <div class="album-item">
+            <img src="img/sinister.jpeg" alt="Sinister">
+            <h3>Sinister</h3>
+            <p><strong>Subtitle</strong></p>
+        </div>
+    </div>
+    </div>
+<!-- profiling -->
+    <div class="recently-played">
+        <div class="recently-played-title">
+            <h2>Creato per John Doe</h2>
+            <p><strong>Già ascolti, più accurati saranno i suggerimenti.</strong></p>
+        </div>
+    </div>
+    <div class="album-items flex debug">
+        <!-- Album 01 -->
+        <div class="album-item">
+            <img src="img/radar.jpeg" alt="Radar">
+            <h3>Release Radar</h3>
+            <p><strong>Subtitle</strong></p>
+        </div>
+        <!-- Album 02 -->
+        <div class="album-items flex debug">
+            <div class="album-item">
+                <img src="img/mixdaily.jpeg" alt="Mixdaily">
+                <h3>Daily Mix 1</h3>
+                <p><strong>Subtitle</strong></p>
+            </div>
+        </div>
+    </div>
+<!-- popular artist -->
+    <div class="recently-played">
+        <div class="recently-played-title">
+            <h2>Artisti più popolari</h2>
+            <p><strong>Già ascolti, più accurati saranno i suggerimenti.</strong></p>
+            </div>
+    </div>
+        <div class="artists-items flex debug">
+            <!-- Artisti -->
+            <div class="artists-items flex debug">
+                <div class="artists-item">
+                    <div class="circle">
+                        <img src="img/einaudi.jpeg" alt="Enaudi">
+                    </div>
+                    <h3>Enauidi</h3>
+                </div>
+            </div>
+            <!-- Artisti -->
+            <div class="artists-items flex debug">
+                <div class="artists-item">
+                    <div class="circle">
+                    <img src="img/youg.jpeg" alt="Youg">
+                    </div>
+                    <h3>Youg</h3>
+                </div>
+            </div>
+        </div>
+</div>    
+
+    </div>
+        </div>
 <!-- footer -->
         <footer>
 <!-- footer left -->

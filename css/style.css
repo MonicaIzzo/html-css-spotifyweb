@@ -44,6 +44,11 @@ strong {
     font-weight: 700;
 }
 
+p {
+    color: var(--lightgrey-color);
+    font-size: 12px;
+}
+
 .flex {
     display: flex;
 }
@@ -71,31 +76,106 @@ hr {
     margin: 10px 0;
 }
 
-/* HEADER */
-.header-main  {
+/* MAIN */
+
+.content {
+    height: calc(100vh - 90px);
+    background-color: var(--body-color);
+}
+
+.header-content {
     height: 90px;
+    flex-grow: 2;
     background-color: var(--header-color);
-    text-align: right;
-    width: 100%;
     padding: 10px 10px;
+    position: relative;
+    }
+
+.header-content .header .header-btn {
+    text-align: right;
     line-height: 70px;
 }
 
-.header-top a {
+.header-content .header a {
     padding: 10px 20px;
     border-radius: 20px;
     border: 2px solid white;
 }
 
-/* MAIN */
-main {
-    height: calc(100vh - 90px);
-    background-color: var(--body-color);
+/* CONTENUTO */
+
+.body-content {
+    height: calc(100vh - 180px);
+    overflow: auto;
+    padding: 20px;
+    color: white;
+} 
+
+.body-content .nav {
+    justify-content: center;
+    align-content: center;
+}
+
+.body-content .nav ul {
+    list-style: none;
+}
+
+.body-content .nav ul li {
+    margin: 20px 30px;
+}
+
+.body-content .nav ul li a {
+    color: var(--lightgrey-color);
+}
+
+.navbar-highlighted {
+    width: 50px;
+    height: 2px;
+    background-color: var(--highlighted-color);
+    display: block;
+    margin: 0 auto;
+    margin-top: 4px;
 }
 
 
 
-/* SITE BAR */
+.body-content .album-items .album-item {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.body-content .artists-items .artists-item {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.body-content .album-items .album-item img {
+    margin-bottom: 20px;
+}
+
+.body-content .artists-items .artists-item .circle img {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.body-content .artists-items .artists-item .circle {
+    background-color: red;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+
+
+
+
+
+
+
+
 .siterbar {
     width: 230px;
     background-color: black;
@@ -188,8 +268,6 @@ main {
 .profile-image-placeholder {
     margin-right: 10px;
 }
-
-
 
 /* FOOTER */
 footer {
