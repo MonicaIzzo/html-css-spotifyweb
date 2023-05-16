@@ -116,22 +116,43 @@ hr {
     margin: 0 auto;
     margin-top: 4px;
 }
-.body-content .album-items .album-item {
+.body-content .row .album-item {
     padding: 10px;
     text-align: center;
     margin-bottom: 40px;
     margin-top: 40px;
+    flex-basis: calc(100%/ 6);
 }
-.body-content .artists-items .artists-item {
-    padding: 10px;
-    text-align: center;
-    margin-bottom: 40px;
-    margin-top: 40px;
+.body-content .row .album-item img {
+    width: 100%;
 }
-.body-content .album-items .album-item img {
+
+.body-content .row .album-item img {
     margin-bottom: 20px;
 }
-.body-content .artists-items .artists-item .circle {
+
+.album-item {
+    position: relative;
+}
+
+.album-item .btn-play  {
+    font-size: 54px;
+    color: white;
+    text-shadow: 0px 0px 8px #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.album-item:hover .btn-play {
+    display: block;
+}
+
+
+.artists-item .circle {
     background-color: red;
     border-radius: 50%;
     width: 250px;
@@ -139,6 +160,11 @@ hr {
     overflow: hidden;
     margin: 0 auto;
     margin-bottom: 20px;
+}
+
+.artists-item {
+    text-align: center;
+    padding: 20px;
 }
 
 /********************************
@@ -232,18 +258,14 @@ footer {
 }
 
 /* FOOTER LEFT */
-.footer-nav-left-album {
+
+footer .row {
     align-content: center;
     align-items: center;
-}
-.footer-nav-left-album .album-img {
+} 
+.album-img img {
     margin-right: 10px;
-}
-.footer-nav-left-album .album-img img {
     height: 70px;
-}
-.footer-nav-left-album .album-title {
-    flex-grow: 2;
 }
 .preferences {
     padding: 0 40px;
@@ -264,10 +286,13 @@ footer {
     justify-content: center;
     align-content: center;
     align-items: center;
+    height: 30px;
+    text-align: center;
 }
 .footer-nav-control-items .fa-solid {
     padding: 0 20px;
     cursor: pointer;
+    width: 60px;
 }
 .control-bottom {
     justify-content: center;
@@ -306,15 +331,17 @@ footer {
     left: 50px;
     display: none;
 }
-.footer-nav-control:hover .control-bottom .step .progress-step
-{
-    display: inline-block;
-}
  .control-bottom:hover .step .progress-step-circle {
-        display: inline-block;
+    display: inline-block;
  }
+
+  .control-bottom:hover .step .progress-step {
+      display: inline-block;
+  }
+
 .footer-nav-control-items a:hover {
     text-shadow: 2px 2px 8px #fff;
+    font-size: 18px;
 }
 
 /* FOOTER RIGHT */
@@ -327,30 +354,7 @@ footer {
     position: relative;
 }
 .footer-nav-right-control .step .progress {
-    margin: 0 20px;
-    background-color: white;
     width: 100px;
-    height: 4px;
-    border-radius: 2px;
-}
-.footer-nav-right-control .step .progress-step {
-    margin: 0 20px;
-    color: var(--highlighted-color);
-    width: 20px;
-    height: 4px;
-    border-radius: 2px;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.footer-nav-right-control .fa-solid {
- color:var(--lightgrey-color);  
-}
-.footer-nav-right-control .fa-solid:hover {
-    color: white;
-}
-.step a:hover .footer-nav-right-control .step .progress-step {
-    color: var(--highlighted-color);
 }
 
 
