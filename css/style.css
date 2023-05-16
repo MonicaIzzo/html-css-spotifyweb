@@ -106,7 +106,7 @@ hr {
     align-content: center;
 }
 .body-content .nav ul li {
-    margin: 20px 30px;
+    margin: 20px 10px;
 }
 .navbar-highlighted {
     width: 50px;
@@ -116,23 +116,21 @@ hr {
     margin: 0 auto;
     margin-top: 4px;
 }
-.body-content .row .album-item {
+.album-item {
     padding: 10px;
     text-align: center;
     margin-bottom: 40px;
     margin-top: 40px;
     flex-basis: calc(100%/ 6);
+    position: relative;
+    flex-wrap: wrap;
 }
-.body-content .row .album-item img {
+.album-item img {
     width: 100%;
 }
 
-.body-content .row .album-item img {
+.album-item img {
     margin-bottom: 20px;
-}
-
-.album-item {
-    position: relative;
 }
 
 .album-item .btn-play  {
@@ -171,14 +169,13 @@ hr {
     SITERBAR
 ********************************/
 .siterbar {
-    width: 230px;
+    flex-basis: 230px;
     background-color: black;
     color: white;
     padding: 20px;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
     position: relative;
+    flex-shrink: 0;
+    
 }
 #logo {
     margin-bottom: 20px;
@@ -257,6 +254,10 @@ footer {
     align-items: center;
 }
 
+.footer-nav-left {
+    flex-shrink: 0;
+}
+
 /* FOOTER LEFT */
 
 footer .row {
@@ -268,12 +269,12 @@ footer .row {
     height: 70px;
 }
 .preferences {
-    padding: 0 40px;
+    padding: 0 10px;
 }
 
 .footer-nav-right-control .fa-solid,
 .preferences .fa-regular {
-    padding: 0 10px;
+    padding: 0 4px;
     cursor: pointer;
 }
 
@@ -281,6 +282,7 @@ footer .row {
 
 .footer-nav-control {
     flex-grow: 2;
+    padding: 0 10px;
 }
 .footer-nav-control-items {
     justify-content: center;
@@ -306,7 +308,7 @@ footer .row {
 .control-bottom .step .progress {
     margin: 0 20px;
     background-color: white;
-    width: 400px;
+    width: 300px;
     height: 4px;
     border-radius: 2px;
 }
@@ -346,6 +348,11 @@ footer .row {
 
 /* FOOTER RIGHT */
 
+.footer-nav-right {
+    padding-left: 10px;
+}
+
+
 .footer-nav-right-control {
     align-content: center;
     align-items: center;
@@ -372,14 +379,24 @@ footer .row {
    RESPONSIVE
 ********************************/
 
+
+/*********DESK small****************/
+
 @media screen and (max-width: 992px) {
     .conteiner {
         max-width: 878px;
         margin: 0 auto;
         }
+    
+    .album-item {
+        flex-basis: calc(100%/ 4);
+        }
+    
 
 }
 
+
+/*********TABLET****************/
 
 @media screen and (max-width: 768px) {}
         .conteiner {
@@ -389,6 +406,8 @@ footer .row {
 
 
 
+
+/*********PHONE****************/
 @media screen and (max-width: 576px) {
     .conteiner {
             max-width: 552px;
