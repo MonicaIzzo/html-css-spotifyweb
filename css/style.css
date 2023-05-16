@@ -405,12 +405,32 @@ footer .row {
 
 /*********TABLET****************/
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
         .conteiner {
             max-width: 639px;
             margin: 0 auto;
         }
 
+        .body-content {
+            padding: 0;
+        }
+        .album-item {
+            flex-basis: calc(100%/ 2);
+        }
+        .body-content .nav ul li {
+        margin: 6px 4px;
+        }
+        .nav .navbar li {
+            font-size: 13px;
+        }
+        .control-bottom .step .progress {
+            margin: 0 4px;
+            width: 80px;
+        }
+          .control-bottom:hover .step .progress-step {
+              display: none;
+          }
+}
 
 
 
