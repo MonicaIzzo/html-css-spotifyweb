@@ -4,7 +4,6 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 } 
-
 /* Custom PROPERTIES */
 :root {
     --body-color: #141922;
@@ -20,69 +19,56 @@ box-sizing: border-box;
 
 
 }
-
-
-
-
 /* Generics */
 body {
     font-family: 'Montserrat', sans-serif;
 }
-
 img {
     display: block;
     max-width: 100%;
 }
-
 /* Utilties */
 .conteiner {
     max-width: 1440px;
     margin: 0 auto;
 }
-
 strong {
     font-weight: 700;
 }
-
 p {
     color: var(--lightgrey-color);
     font-size: 12px;
 }
-
 .flex {
     display: flex;
 }
-
 .debug {
     border: 2px dotted red;
 }
-
 ul {
     list-style: none;
 }
-
 a {
     text-decoration: none;
-    color: white;
+    color: var(--lightgrey-color);
     font-weight: 700;
 }
-
 a:hover {
-    color: var(--highlighted-color);
+    color: white;
 }
-
 hr {
     width: 100%;
     margin: 10px 0;
 }
 
-/* MAIN */
+/********************************
+    MAIN
+********************************/
 
 .content {
     height: calc(100vh - 90px);
     background-color: var(--body-color);
 }
-
 .header-content {
     height: 90px;
     flex-grow: 2;
@@ -90,19 +76,24 @@ hr {
     padding: 10px 10px;
     position: relative;
     }
-
 .header-content .header .header-btn {
     text-align: right;
-    line-height: 70px;
 }
-
 .header-content .header a {
     padding: 10px 20px;
     border-radius: 20px;
     border: 2px solid white;
+    color: white;
+    line-height: 70px;
+}
+.header-content .header a:hover {
+    border: 2px solid #adff2f;
+    color: #adff2f;;
 }
 
-/* CONTENUTO */
+/********************************
+    CONTENUTO
+********************************/
 
 .body-content {
     height: calc(100vh - 180px);
@@ -110,28 +101,13 @@ hr {
     padding: 20px;
     color: white;
 } 
-
 .body-content .nav {
     justify-content: center;
     align-content: center;
 }
-
-.body-content .nav ul {
-    list-style: none;
-}
-
 .body-content .nav ul li {
     margin: 20px 30px;
 }
-
-.body-content .nav ul li a {
-    color: var(--lightgrey-color);
-}
-
-.body-content .nav ul li a:hover {
-    color: white;
-}
-
 .navbar-highlighted {
     width: 50px;
     height: 2px;
@@ -140,40 +116,34 @@ hr {
     margin: 0 auto;
     margin-top: 4px;
 }
-
-
-
 .body-content .album-items .album-item {
     padding: 10px;
     text-align: center;
     margin-bottom: 40px;
     margin-top: 40px;
 }
-
 .body-content .artists-items .artists-item {
     padding: 10px;
     text-align: center;
     margin-bottom: 40px;
     margin-top: 40px;
 }
-
 .body-content .album-items .album-item img {
     margin-bottom: 20px;
 }
-
-
-
 .body-content .artists-items .artists-item .circle {
     background-color: red;
     border-radius: 50%;
-        width: 250px;
-        height: 250px;
-        overflow: hidden;
-        margin: 0 auto;
-        margin-bottom: 20px;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
-
+/********************************
+    SITERBAR
+********************************/
 .siterbar {
     width: 230px;
     background-color: black;
@@ -187,42 +157,20 @@ hr {
 #logo {
     margin-bottom: 20px;
 }
-
-.siterbar .navbar {
-    
-}
-
 .fa-house,
 .fa-magnifying-glass,
 .fa-bars-staggered
  {
-    margin-right: 20px;
-   
+    margin-right: 20px;   
 }
-
 .fa-square-plus  {
      margin-right: 10px;
-
  }
-
 .siterbar .navbar-list li {
     margin: 20px 0;
 }
-
-.siterbar .navbar-list li a {
-    margin: 20px 0;
-}
-
-.siterbar .navbar-list li a:hover {
-    color: white;
-}
-
 .navbar-list .playlist {
     margin-top: 40px;
-}
-
-.navbar-list .playlist span {
-    font-weight: 700;
 }
 
 .playlist-title {
@@ -230,13 +178,6 @@ hr {
     margin: 20px 0;
     color: white;
 }
-
-.siterbar a,
-.siterbar footer a
-{
-    color: var(--lightgrey-color)
-}
-
 .siterbar .highlighted {
     width: 2px;
     background-color: var(--highlighted-color);
@@ -245,24 +186,11 @@ hr {
     top: 98px;
     left: 20px;
 }
-
-.download:hover a {
-    color: white;
-}
-
 .download:hover .fa-circle-down {
     color: white;
 }
 
-/* SITE BAR FOOTER */
-.siterbar {
-    color: var(--lightgrey-color)
-}
 
-.siterbar footer {
-    background-color: var(--sitebar-color);
-    height: 120px;
-}
 .fa-circle-down {
     margin-right: 10px;
     color: var(--lightgrey-color);
@@ -270,6 +198,10 @@ hr {
 
 .siterbar footer img {
     width: 40px;
+}
+.siterbar footer {
+    background-color: var(--sitebar-color);
+    height: 120px;
 }
 .profile {
     align-content: center;
@@ -279,14 +211,16 @@ hr {
     margin-right: 10px;
 }
 
-/* FOOTER */
+/********************************
+    FOOTER
+********************************/
+
+
 footer {
     height: 90px;
     background-color: var(--footer-color);
     padding: 10px;
     color: white;
-    position: sticky;
-    overflow: hidden;
 }
 .footer-nav {
     height: 100%;
@@ -296,28 +230,21 @@ footer {
     align-content: center;
     align-items: center;
 }
-.footer-nav-left,
-.footer-nav-right {  
-}
 
 /* FOOTER LEFT */
 .footer-nav-left-album {
     align-content: center;
     align-items: center;
 }
-
 .footer-nav-left-album .album-img {
     margin-right: 10px;
 }
-
 .footer-nav-left-album .album-img img {
     height: 70px;
 }
-
 .footer-nav-left-album .album-title {
     flex-grow: 2;
 }
-
 .preferences {
     padding: 0 40px;
 }
@@ -333,13 +260,11 @@ footer {
 .footer-nav-control {
     flex-grow: 2;
 }
-
 .footer-nav-control-items {
     justify-content: center;
     align-content: center;
     align-items: center;
 }
-
 .footer-nav-control-items .fa-solid {
     padding: 0 20px;
     cursor: pointer;
@@ -350,11 +275,9 @@ footer {
     align-items: center;
     padding: 10px 0;
 }
-
 .control-bottom .step {
     position: relative;
 }
-
 .control-bottom .step .progress {
     margin: 0 20px;
     background-color: white;
@@ -362,7 +285,6 @@ footer {
     height: 4px;
     border-radius: 2px;
 }
-
 .control-bottom .step .progress-step {
     margin: 0 20px;
     background-color: var(--highlighted-color);
@@ -372,6 +294,27 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
+    display: none;
+}
+.control-bottom .step .progress-step-circle {
+    background-color: var(--highlighted-color);
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: -3px;
+    left: 50px;
+    display: none;
+}
+.footer-nav-control:hover .control-bottom .step .progress-step
+{
+    display: inline-block;
+}
+ .control-bottom:hover .step .progress-step-circle {
+        display: inline-block;
+ }
+.footer-nav-control-items a:hover {
+    text-shadow: 2px 2px 8px #fff;
 }
 
 /* FOOTER RIGHT */
@@ -380,11 +323,9 @@ footer {
     align-content: center;
     align-items: center;
 }
-
 .footer-nav-right-control .step {
     position: relative;
 }
-
 .footer-nav-right-control .step .progress {
     margin: 0 20px;
     background-color: white;
@@ -392,16 +333,24 @@ footer {
     height: 4px;
     border-radius: 2px;
 }
-
 .footer-nav-right-control .step .progress-step {
     margin: 0 20px;
-    background-color: var(--highlighted-color);
+    color: var(--highlighted-color);
     width: 20px;
     height: 4px;
     border-radius: 2px;
     position: absolute;
     top: 0;
     left: 0;
+}
+.footer-nav-right-control .fa-solid {
+ color:var(--lightgrey-color);  
+}
+.footer-nav-right-control .fa-solid:hover {
+    color: white;
+}
+.step a:hover .footer-nav-right-control .step .progress-step {
+    color: var(--highlighted-color);
 }
 
 
@@ -415,7 +364,9 @@ footer {
 
 
 
-
+/********************************
+   RESPONSIVE
+********************************/
 
 @media screen and (max-width: 992px) {
     .conteiner {
