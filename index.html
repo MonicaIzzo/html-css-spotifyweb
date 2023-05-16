@@ -29,17 +29,15 @@
 </head>
     <body>
         <div class="content flex">
-<!-- siterbar -->
-
-<div class="siterbar ">
-    <!-- siterbar nav -->
-    <nav class="">
+<!-- siterbar large  -->
+<div class="siterbar flex">
+    <nav class="nav-large">
         <div class="navbar">
             <div id="logo"><a href="#">
                     <img src="img/logo.svg" alt="logo Spotify"></a>
             </div>
         </div>
-        <div class="navbar-list debug">
+        <div class="navbar-list">
             <ul class="fa-ul">
                 <li><a href="#">Home<span class="fa-li"><i class="fa-solid fa-house fa-xl"></i></span></a></li>
                 <li><a href="#"><span class="fa-li"><i class="fa-solid fa-magnifying-glass fa-xl"></i></span>Cerca</a></li>
@@ -58,23 +56,45 @@
                 </ul>
             </div>
         </div>
-    </nav>
-    <!-- siterbar footer-->
-    <footer class="download">
-        <div><i class="fa-solid fa-circle-down"></i><a href="#">Installa app</a></div>
-        <hr>
-        <div class="profile flex">
-            <div class="profile-image-placeholder">
-                <img src="img/profile-image-placeholder.png" alt="Profile">
+        <footer class="download">
+            <div><i class="fa-solid fa-circle-down"></i><a href="#">Installa app</a></div>
+            <hr>
+            <div class="profile flex">
+                <div class="profile-image-placeholder">
+                    <img src="img/profile-image-placeholder.png" alt="Profile">
+                </div>
+                <div>
+                    <span><strong>John Doe</strong></span>
+                </div>
             </div>
-            <div>
-                <span><strong>John Doe</strong></span>
+        </footer>
+    </nav>
+</div>
+<!-- siterbar nav -->
+<div class="siterbar-small flex">
+
+        <div class="navbar">
+            <div><a href="#">
+                    <img src="img/logo-small.svg" alt="logo Spotify" id="logo-small"></a>
+            </div>
+                <div class="navbar-list">
+                    <div class="">
+                        <div><a href="#"><i class="fa-solid fa-house fa-2xl"></i></a></div>
+                        <div><a href="#"><i class="fa-solid fa-magnifying-glass fa-2xl"></i></a></div>
+                        <div><a href="#"><i class="fa-solid fa-bars-staggered fa-2xl"></i></a></div>
+                    </div>
+                </div>
+        </div>
+        <div class="download">
+            <div><i class="fa-solid fa-circle-down fa-2xl"></i><a href="#"></a></div>
+            <hr>
+            <div class="profile flex">
+                <div class="profile-image-placeholder">
+                    <img src="img/profile-image-placeholder.png" alt="Profile">
+                </div>
             </div>
         </div>
-    </footer>
-    <div class="highlighted">
-
-    </div>
+ 
 </div>
 <!-- Header Content -->
 
@@ -87,7 +107,7 @@
 <!-- Body Content -->
     <div class="body-content">
 <!-- Body Nav -->
-        <div class="nav flex debug">
+        <div class="nav flex">
             <ul class="navbar flex">
                 <li><a href="#">IN EVIDENZA<span class="navbar-highlighted">
                 </span></a></li>
@@ -106,9 +126,9 @@
         </div>
     </div>
     
-    <div class="row flex debug test">
+    <div class="row flex">
         <!-- Album 01 -->
-        <div class="album-item debug">
+        <div class="album-item">
             <img src="img/metal_lifting.jpg" alt="Metal Lifting">
             <h3>Heavy Metal</h3>
             <p><strong>Subtitle</strong></p>
@@ -116,7 +136,7 @@
         </div>
         <!-- Album 02 -->
     
-        <div class="album-item debug">
+        <div class="album-item">
             <img src="img/stranger.jpeg" alt="Stranger Things">
             <h3>Stranger Things, Vol. 1</h3>
             <p><strong>Subtitle</strong></p>
@@ -125,7 +145,7 @@
     
         <!-- Album 03 -->
     
-        <div class="album-item debug">
+        <div class="album-item">
             <img src="img/split.jpeg" alt="Split">
             <h3>Split</h3>
             <p><strong>Subtitle</strong></p>
@@ -134,7 +154,7 @@
     
         <!-- Album 04 -->
     
-        <div class="album-item debug">
+        <div class="album-item">
             <img src="img/aquietplace.jpeg" alt="A quiet place">
             <h3>A quiet place</h3>
             <p><strong>Subtitle</strong></p>
@@ -143,7 +163,7 @@
     
         <!-- Album 05 -->
     
-        <div class="album-item debug">
+        <div class="album-item">
             <img src="img/cure.jpeg" alt="Wellness">
             <h3>A cure for wellness</h3>
             <p><strong>Subtitle</strong></p>
@@ -152,7 +172,7 @@
     
         <!-- Album 06 -->
     
-        <div class="album-item debug">
+        <div class="album-item">
             <img src="img/sinister.jpeg" alt="Sinister">
             <h3>Sinister</h3>
             <p><strong>Subtitle</strong></p>
@@ -167,7 +187,7 @@
             <p><strong>Già ascolti, più accurati saranno i suggerimenti.</strong></p>
         </div>
     </div>
-    <div class="row flex debug test">
+    <div class="row flex">
         <!-- Album 01 -->
         <div class="album-item">
             <img src="img/radar.jpeg" alt="Radar">
@@ -192,7 +212,7 @@
         <p><strong>Già ascolti, più accurati saranno i suggerimenti.</strong></p>
     </div>
 </div>
-<div class="row flex debug test">
+<div class="row flex">
     <!-- Artisti -->
     <div class="album-item artists">
         <div class="circle-img">
@@ -221,7 +241,7 @@
         <footer>
 <!-- footer left -->
             <div class="footer-nav flex">
-                <div class="footer-nav-left debug">
+                <div class="footer-nav-left">
 <!-- footer left album -->
                     <div class="row flex">
                         <div class="album-img">
@@ -242,7 +262,7 @@
 
                 </div>
 <!-- footer control -->
-                <div class="footer-nav-control debug">
+                <div class="footer-nav-control">
 <!-- footer control top -->
                     <div class="footer-nav-control-items flex">
                         <div><a href="#"><i class="fa-solid fa-shuffle fa-lg"></i></a></div>
@@ -266,7 +286,7 @@
                     </div>
                 </div>
 <!-- footer right -->
-                <div class="footer-nav-right debug">
+                <div class="footer-nav-right">
                     <div class="footer-nav-right-control flex">
                         <div><a href="#"><i class="fa-solid fa-list"></i></a></div>
                         <div><a href="#"><i class="fa-solid fa-desktop"></i></a></div>

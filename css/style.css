@@ -38,12 +38,13 @@ strong {
 p {
     color: var(--lightgrey-color);
     font-size: 12px;
-    margin: 10px 0;
+    margin: 4px 0;
 }
 
 h3 {
 
-    margin: 10px 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .flex {
@@ -177,6 +178,14 @@ hr {
     flex-shrink: 0;
     
 }
+.siterbar-small {
+    display: none;
+    flex-basis: 50px;
+    padding: 10px;
+    position: relative;
+    flex-shrink: 0;
+}
+
 #logo {
     margin-bottom: 20px;
 }
@@ -226,10 +235,11 @@ hr {
     background-color: var(--sitebar-color);
     height: 120px;
 }
+
 .profile {
-    align-content: center;
     align-items: center;
 }
+
 .profile-image-placeholder {
     margin-right: 10px;
 }
@@ -392,7 +402,6 @@ footer .row {
 @media screen and (max-width: 992px) {
     .conteiner {
         max-width: 878px;
-        margin: 0 auto;
         }
     
     .album-item {
@@ -407,8 +416,7 @@ footer .row {
 
 @media screen and (max-width: 768px) {
         .conteiner {
-            max-width: 639px;
-            margin: 0 auto;
+            width: 100%;
         }
 
         .body-content {
@@ -418,10 +426,16 @@ footer .row {
             flex-basis: calc(100%/ 2);
         }
         .body-content .nav ul li {
-        margin: 6px 4px;
+            margin: 10px 10px;
         }
-        .nav .navbar li {
-            font-size: 13px;
+      
+        .nav .navbar {
+            text-align: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            height: 160px;
+            align-content: flex-start;
+            padding-top: 20px;
         }
         .control-bottom .step .progress {
             margin: 0 4px;
@@ -430,6 +444,13 @@ footer .row {
           .control-bottom:hover .step .progress-step {
               display: none;
           }
+            .footer-nav-right {
+            display: none;
+         } 
+         .footer-nav-control {
+        flex-grow: 2;
+        padding: 0 0px;
+        }
 }
 
 
@@ -437,7 +458,55 @@ footer .row {
 /*********PHONE****************/
 @media screen and (max-width: 576px) {
     .conteiner {
-            max-width: 552px;
-            margin: 0 auto;
+            width: 100px;
         }
+        
+    .siterbar {
+    display: none;
+    }
+    .siterbar-small {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--sitebar-color)
+    }
+
+    .navbar {
+	text-align: center;
+    }
+
+    .download {
+        text-align: center;
+        }
+      
+    .logo {
+            flex-shrink: 2;
+        }  
+        
+    .col-footer{
+        flex-shrink: 2;
+        }    
+
+    #logo-small {
+            display: block;
+            width: 50px;
+            margin-bottom: 30px;
+        }
+    .fa-solid {
+        margin: 20px 0;
+        }
+    .navbar-list{
+       width: 50px;
+        }
+        .navbar-list .fa-solid {
+        text-align: center;
+        margin-bottom: 40px;
+        }
+    .col {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+        }
+    .profile-image-placeholder {
+    margin-right: 0px;
+    }
 }
