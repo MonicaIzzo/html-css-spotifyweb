@@ -1,72 +1,69 @@
 /* Reset CSS */
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-} 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /* Custom PROPERTIES */
 :root {
-    --body-color: #141922;
-    --header-color: #080b12;
-    --sitebar-color: #000000;
-    --footer-color: #282828;
-    --highlighted-color: #adff2f;
-    --hover-color: #ffffff;
-    --lightgrey-color: #aaa;
+  --body-color: #141922;
+  --header-color: #080b12;
+  --sitebar-color: #000000;
+  --footer-color: #282828;
+  --highlighted-color: #adff2f;
+  --hover-color: #ffffff;
+  --lightgrey-color: #aaa;
 
-    /*--fa-li-margin: 100px; */
-    /* --fa-li-width: ;*/
-
-
+  /*--fa-li-margin: 100px; */
+  /* --fa-li-width: ;*/
 }
 /* Generics */
 body {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 img {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 /* Utilties */
 .conteiner {
-    max-width: 1440px;
-    margin: 0 auto;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 strong {
-    font-weight: 700;
+  font-weight: 700;
 }
 p {
-    color: var(--lightgrey-color);
-    font-size: 12px;
-    margin: 4px 0;
+  color: var(--lightgrey-color);
+  font-size: 12px;
+  margin: 4px 0;
 }
 
 h3 {
-
-    margin-top: 20px;
-    margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 .debug {
-    border: 2px dotted red;
+  border: 2px dotted red;
 }
 ul {
-    list-style: none;
+  list-style: none;
 }
 a {
-    text-decoration: none;
-    color: var(--lightgrey-color);
-    font-weight: 700;
+  text-decoration: none;
+  color: var(--lightgrey-color);
+  font-weight: 700;
 }
 a:hover {
-    color: white;
+  color: white;
 }
 hr {
-    width: 100%;
-    margin: 10px 0;
+  width: 100%;
+  margin: 10px 0;
 }
 
 /********************************
@@ -74,29 +71,29 @@ hr {
 ********************************/
 
 .content {
-    height: calc(100vh - 90px);
-    background-color: var(--body-color);
+  height: calc(100vh - 90px);
+  background-color: var(--body-color);
 }
 .header-content {
-    height: 90px;
-    flex-grow: 2;
-    background-color: var(--header-color);
-    padding: 10px 10px;
-    position: relative;
-    }
+  height: 90px;
+  flex-grow: 2;
+  background-color: var(--header-color);
+  padding: 10px 10px;
+  position: relative;
+}
 .header-content .header .header-btn {
-    text-align: right;
+  text-align: right;
 }
 .header-content .header a {
-    padding: 10px 20px;
-    border-radius: 20px;
-    border: 2px solid white;
-    color: white;
-    line-height: 70px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px solid white;
+  color: white;
+  line-height: 70px;
 }
 .header-content .header a:hover {
-    border: 2px solid #adff2f;
-    color: #adff2f;;
+  border: 2px solid #adff2f;
+  color: #adff2f;
 }
 
 /********************************
@@ -104,399 +101,373 @@ hr {
 ********************************/
 
 .body-content {
-    height: calc(100vh - 180px);
-    overflow: auto;
-    padding: 20px;
-    color: white;
-} 
+  height: calc(100vh - 180px);
+  overflow: auto;
+  padding: 20px;
+  color: white;
+}
 .body-content .nav {
-    justify-content: center;
-    align-content: center;
+  justify-content: center;
+  align-content: center;
 }
 .body-content .nav ul li {
-    margin: 20px 10px;
+  margin: 20px 10px;
 }
 .navbar-highlighted {
-    width: 50px;
-    height: 2px;
-    background-color: var(--highlighted-color);
-    display: block;
-    margin: 0 auto;
-    margin-top: 4px;
+  width: 50px;
+  height: 2px;
+  background-color: var(--highlighted-color);
+  display: block;
+  margin: 0 auto;
+  margin-top: 4px;
 }
 
 .row {
-    flex-wrap: wrap;
-    margin-top: 40px;
-    margin-bottom: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .album-item {
-    padding: 10px;
-    text-align: center;
-    flex-basis: calc(100%/ 6);
-    position: relative;
+  padding: 10px;
+  text-align: center;
+  flex-basis: calc(100% / 6);
+  position: relative;
 }
 .album-item img {
-    width: 100%;
+  width: 100%;
 }
 
-.album-item .btn-play  {
-    font-size: 54px;
-    color: white;
-    text-shadow: 0px 0px 8px #fff;
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
+.album-item .btn-play {
+  font-size: 54px;
+  color: white;
+  text-shadow: 0px 0px 8px #fff;
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
 }
 
 .album-item:hover .btn-play {
-    display: block;
+  display: block;
 }
 
-
 .circle-img {
-    background-color: red;
-    border-radius: 50%;
-    max-width: 100%;
-    overflow: hidden;
-    margin: 0 auto;
+  background-color: red;
+  border-radius: 50%;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 /********************************
     SITERBAR
 ********************************/
 .siterbar {
-    flex-basis: 230px;
-    background-color: black;
-    color: white;
-    padding: 20px;
-    position: relative;
-    flex-shrink: 0;
-    
+  flex-basis: 230px;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  position: relative;
+  flex-shrink: 0;
 }
 .siterbar-small {
-    display: none;
-    flex-basis: 50px;
-    padding: 10px;
-    position: relative;
-    flex-shrink: 0;
+  display: none;
+  flex-basis: 50px;
+  padding: 10px;
+  position: relative;
+  flex-shrink: 0;
 }
 
 #logo {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .fa-house,
 .fa-magnifying-glass,
-.fa-bars-staggered
- {
-    margin-right: 20px;   
+.fa-bars-staggered {
+  margin-right: 20px;
 }
-.fa-square-plus  {
-     margin-right: 10px;
- }
+.fa-square-plus {
+  margin-right: 10px;
+}
 .siterbar .navbar-list li {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 .navbar-list .playlist {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .playlist-title {
-    display: inline-block;
-    margin: 20px 0;
-    color: white;
+  display: inline-block;
+  margin: 20px 0;
+  color: white;
 }
 .siterbar .highlighted {
-    width: 2px;
-    background-color: var(--highlighted-color);
-    height: 50px;
-    position: absolute;
-    top: 98px;
-    left: 20px;
+  width: 2px;
+  background-color: var(--highlighted-color);
+  height: 50px;
+  position: absolute;
+  top: 98px;
+  left: 20px;
 }
 .download:hover .fa-circle-down {
-    color: white;
+  color: white;
 }
-
-
 .fa-circle-down {
-    margin-right: 10px;
-    color: var(--lightgrey-color);
+  margin-right: 10px;
+  color: var(--lightgrey-color);
 }
-
 .siterbar footer img {
-    width: 40px;
+  width: 40px;
 }
 .siterbar footer {
-    background-color: var(--sitebar-color);
-    height: 120px;
+  background-color: var(--sitebar-color);
+  height: 120px;
 }
-
 .profile {
-    align-items: center;
+  align-items: center;
 }
-
 .profile-image-placeholder {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 /********************************
     FOOTER
 ********************************/
 
-
 footer {
-    height: 90px;
-    background-color: var(--footer-color);
-    padding: 10px;
-    color: white;
+  height: 90px;
+  background-color: var(--footer-color);
+  padding: 10px;
+  color: white;
 }
 .footer-nav {
-    height: 100%;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
+  height: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
 }
-
 .footer-nav-left {
-    flex-shrink: 0;
+  flex-shrink: 0;
 }
-
-
 .footer-nav-left .row {
-    
-    margin-top: 0px;
-    margin-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 /* FOOTER LEFT */
 
 footer .row {
-    align-content: center;
-    align-items: center;
-} 
+  align-content: center;
+  align-items: center;
+}
 .album-img img {
-    margin-right: 10px;
-    height: 70px;
+  margin-right: 10px;
+  height: 70px;
 }
 .preferences {
-    padding: 0 10px;
+  padding: 0 10px;
 }
 
 .footer-nav-right-control .fa-solid,
 .preferences .fa-regular {
-    padding: 0 4px;
-    cursor: pointer;
+  padding: 0 4px;
+  cursor: pointer;
 }
 
 /* FOOTER CONTROL CENTER */
 
 .footer-nav-control {
-    flex-grow: 2;
-    padding: 0 10px;
+  flex-grow: 2;
+  padding: 0 10px;
 }
 .footer-nav-control-items {
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    height: 30px;
-    text-align: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 30px;
+  text-align: center;
 }
 .footer-nav-control-items .fa-solid {
-    padding: 0 20px;
-    cursor: pointer;
-    width: 60px;
+  padding: 0 20px;
+  cursor: pointer;
+  width: 60px;
 }
 .control-bottom {
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    padding: 10px 0;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 10px 0;
 }
 .control-bottom .step {
-    position: relative;
+  position: relative;
 }
 .control-bottom .step .progress {
-    margin: 0 20px;
-    background-color: white;
-    width: 300px;
-    height: 4px;
-    border-radius: 2px;
+  margin: 0 20px;
+  background-color: white;
+  width: 300px;
+  height: 4px;
+  border-radius: 2px;
 }
 .control-bottom .step .progress-step {
-    margin: 0 20px;
-    background-color: var(--highlighted-color);
-    width: 40px;
-    height: 4px;
-    border-radius: 2px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: none;
+  margin: 0 20px;
+  background-color: var(--highlighted-color);
+  width: 40px;
+  height: 4px;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
 }
 .control-bottom .step .progress-step-circle {
-    background-color: var(--highlighted-color);
-    width: 10px;
-    height: 10px;
-    border-radius: 10px;
-    position: absolute;
-    top: -3px;
-    left: 50px;
-    display: none;
+  background-color: var(--highlighted-color);
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: -3px;
+  left: 50px;
+  display: none;
 }
- .control-bottom:hover .step .progress-step-circle {
-    display: inline-block;
- }
-
-  .control-bottom:hover .step .progress-step {
-      display: inline-block;
-  }
-
+.control-bottom:hover .step .progress-step-circle {
+  display: inline-block;
+}
+.control-bottom:hover .step .progress-step {
+  display: inline-block;
+}
 .footer-nav-control-items a:hover {
-    text-shadow: 2px 2px 8px #fff;
-    font-size: 18px;
+  text-shadow: 2px 2px 8px #fff;
+  font-size: 18px;
 }
 
 /* FOOTER RIGHT */
 
 .footer-nav-right {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 .footer-nav-right-control {
-    align-content: center;
-    align-items: center;
+  align-content: center;
+  align-items: center;
 }
 .footer-nav-right-control .step {
-    position: relative;
+  position: relative;
 }
 .footer-nav-right-control .step .progress {
-    width: 100px;
+  width: 100px;
 }
-
-
-
 
 /********************************
    RESPONSIVE
 ********************************/
 
-
 /*********DESK small****************/
 
 @media screen and (max-width: 992px) {
-    .conteiner {
-        max-width: 878px;
-        }
-    
-    .album-item {
-        flex-basis: calc(100%/ 4);
-        }
-    
-
+  .conteiner {
+    max-width: 878px;
+  }
+  .album-item {
+    flex-basis: calc(100% / 4);
+  }
 }
-
 
 /*********TABLET****************/
 
 @media screen and (max-width: 768px) {
-        .conteiner {
-            width: 100%;
-        }
+  .conteiner {
+    width: 100%;
+  }
 
-        .body-content {
-            padding: 0;
-        }
-        .album-item {
-            flex-basis: calc(100%/ 2);
-        }
-        .body-content .nav ul li {
-            margin: 10px 10px;
-        }
-      
-        .nav .navbar {
-            text-align: center;
-            flex-wrap: wrap;
-            justify-content: center;
-            height: 160px;
-            align-content: flex-start;
-            padding-top: 20px;
-        }
-        .control-bottom .step .progress {
-            margin: 0 4px;
-            width: 80px;
-        }
-          .control-bottom:hover .step .progress-step {
-              display: none;
-          }
-            .footer-nav-right {
-            display: none;
-         } 
-         .footer-nav-control {
-        flex-grow: 2;
-        padding: 0 0px;
-        }
+  .body-content {
+    padding: 0;
+  }
+  .album-item {
+    flex-basis: calc(100% / 2);
+  }
+  .body-content .nav ul li {
+    margin: 10px 10px;
+  }
+
+  .nav .navbar {
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 160px;
+    align-content: flex-start;
+    padding-top: 20px;
+  }
+  .control-bottom .step .progress {
+    margin: 0 4px;
+    width: 80px;
+  }
+  .control-bottom:hover .step .progress-step {
+    display: none;
+  }
+  .footer-nav-right {
+    display: none;
+  }
+  .footer-nav-control {
+    flex-grow: 2;
+    padding: 0 0px;
+  }
 }
-
-
 
 /*********PHONE****************/
 @media screen and (max-width: 576px) {
-    .conteiner {
-            width: 100px;
-        }
-        
-    .siterbar {
+  .conteiner {
+    width: 100px;
+  }
+  .siterbar {
     display: none;
-    }
-    .siterbar-small {
+  }
+  .siterbar-small {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: var(--sitebar-color)
-    }
+    background-color: var(--sitebar-color);
+  }
 
-    .navbar {
-	text-align: center;
-    }
+  .navbar {
+    text-align: center;
+  }
 
-    .download {
-        text-align: center;
-        }
-      
-    .logo {
-            flex-shrink: 2;
-        }  
-        
-    .col-footer{
-        flex-shrink: 2;
-        }    
+  .download {
+    text-align: center;
+  }
 
-    #logo-small {
-            display: block;
-            width: 50px;
-            margin-bottom: 30px;
-        }
-    .fa-solid {
-        margin: 20px 0;
-        }
-    .navbar-list{
-       width: 50px;
-        }
-        .navbar-list .fa-solid {
-        text-align: center;
-        margin-bottom: 40px;
-        }
-    .col {
-        flex-basis: 100%;
-        margin-bottom: 20px;
-        }
-    .profile-image-placeholder {
+  .logo {
+    flex-shrink: 2;
+  }
+
+  .col-footer {
+    flex-shrink: 2;
+  }
+
+  #logo-small {
+    display: block;
+    width: 50px;
+    margin-bottom: 30px;
+  }
+  .fa-solid {
+    margin: 20px 0;
+  }
+  .navbar-list {
+    width: 50px;
+  }
+  .navbar-list .fa-solid {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .col {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+  .profile-image-placeholder {
     margin-right: 0px;
-    }
+  }
 }
